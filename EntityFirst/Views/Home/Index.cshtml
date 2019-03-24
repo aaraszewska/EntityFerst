@@ -1,0 +1,17 @@
+﻿@model EntityFirst.Models.Employee
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2> Create New Employees</h2>
+
+<div>
+    @using (Html.BeginForm("CreateNewEmployee", "Home"))
+    {
+        @Html.EditorFor(m => m)
+       
+
+        <input type="submit" value="sent" />
+    }
+</div>
+
